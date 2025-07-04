@@ -1,11 +1,13 @@
-package org.example.customermanagement.model;
+package org.example.customermanagement.service;
+
+import org.example.customermanagement.model.Customer;
 
 import java.util.List;
 
 public interface CustomerService {
-    List<customer> findAll();
-    void save(customer customer);
-    customer findById(int id);
-    void update(int id, customer customer);
+    List<Customer> findAll();
+    void save(Customer customer);
+    Customer findById(int id);
+    void update(int id, Customer customer);
     void remove(int id);
 }
