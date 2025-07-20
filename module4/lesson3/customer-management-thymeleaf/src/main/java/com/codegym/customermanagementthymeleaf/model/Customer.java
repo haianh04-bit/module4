@@ -1,4 +1,4 @@
-package com.codegym.model;
+package com.codegym.customermanagementthymeleaf.controller;
 
 public class Customer {
     private int id;
@@ -8,7 +8,6 @@ public class Customer {
 
     public Customer() {
     }
-
     public Customer(int id, String name, String email, String address) {
         this.id = id;
         this.name = name;
