@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh sách bài hát</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h2>Danh sách bài hát đã lưu</h2>
+<table border="1">
+    <tr>
+        <th>Tên bài hát</th>
+        <th>Nghệ sĩ</th>
+        <th>Thể loại</th>
+    </tr>
+    <tr th:each="song : ${songs}">
+        <td th:text="${song.name}"></td>
+        <td th:text="${song.artist}"></td>
+        <td th:text="${song.genre}"></td>
+    </tr>
+</table>
+<a href="/songs/create">Thêm mới</a>
+</body>
+</html>
