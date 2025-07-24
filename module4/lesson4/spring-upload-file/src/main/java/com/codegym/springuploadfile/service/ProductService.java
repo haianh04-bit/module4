@@ -1,12 +1,8 @@
 package com.codegym.springuploadfile.service;
 
 import com.codegym.springuploadfile.model.Product;
-
-import java.util.Collections;
 import java.util.List;
-
 import java.util.ArrayList;
-import java.util.List;
 
 public class ProductService implements IProductService {
     private final List<Product> products;
