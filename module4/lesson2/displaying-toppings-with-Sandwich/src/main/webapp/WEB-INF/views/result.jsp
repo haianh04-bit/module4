@@ -1,16 +1,18 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Admin
-  Date: 20/07/2025
-  Time: 8:43 CH
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>Selected Condiments</title>
+</head>
+<body>
+<h2>You selected:</h2>
+<c:if test="${empty selectedCondiments}">
+    <p>No condiment selected.</p>
+</c:if>
+<ul>
+    <c:forEach var="item" items="${selectedCondiments}">
+        <li>${item}</li>
+    </c:forEach>
+</ul>
+<a href="/">Back</a>
+</body>
 </html>
